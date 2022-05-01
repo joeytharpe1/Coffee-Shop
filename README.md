@@ -1,6 +1,6 @@
 # CoffeeShop
 
-This is a coffee shop backend project built using springboot 2, java 17 and maven.
+This is a coffee shop backend project built using springboot 2, java 17, SQL and maven.
 
 ## Next Steps
 * *Add unit testing to controller, services, and repository*
