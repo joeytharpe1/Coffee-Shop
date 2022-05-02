@@ -52,4 +52,11 @@ public class CoffeeController {
         LOGGER.info("Inside updateCoffee of CoffeeController");
         return coffeeService.updateCoffee(coffeeId, coffee);
     }
+
+    //get coffee by name
+    @GetMapping("/name/{name}")
+    public Coffee fetchCoffeeByName(@PathVariable("name") String coffeeName){
+        LOGGER.info("inside fetchCoffeeByName of CoffeeController");
+        return coffeeService.fetchCoffeeByName(coffeeName);
+    }
 }

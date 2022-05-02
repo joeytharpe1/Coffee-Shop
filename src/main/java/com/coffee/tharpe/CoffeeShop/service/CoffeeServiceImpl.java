@@ -75,4 +75,9 @@ public class CoffeeServiceImpl implements CoffeeService{
 
         return coffeeRepository.save(coffeeToUpdate);
     }
+
+    @Override
+    public Coffee fetchCoffeeByName(String coffeeName){
+        return coffeeRepository.findByCoffeeNameIgnoreCase(coffeeName);
+    }
 }

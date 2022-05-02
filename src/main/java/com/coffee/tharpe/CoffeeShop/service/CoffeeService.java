@@ -21,5 +21,8 @@ public interface CoffeeService {
 
     //update a coffee
     Coffee updateCoffee(Long coffeeId, Coffee coffee) throws CoffeeNotFoundException;
+
+    //get coffee by a name
+    Coffee fetchCoffeeByName(String coffeeName);
 }
 

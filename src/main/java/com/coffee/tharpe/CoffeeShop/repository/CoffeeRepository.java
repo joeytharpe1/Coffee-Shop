@@ -6,4 +6,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface CoffeeRepository extends JpaRepository<Coffee, Long> {
+
+    //custom method for getting by name
+    Coffee findByCoffeeNameIgnoreCase(String coffeeName);
 }
